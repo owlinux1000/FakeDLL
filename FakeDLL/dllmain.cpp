@@ -21,4 +21,8 @@ extern "C" {
     __declspec(dllexport) void __stdcall target() {
         MessageBox(NULL, TEXT("target is called"), TEXT("FakeDLL"), MB_OK);
     }
+    __declspec(dllexport) void DllRegisterServer() {
+        MessageBox(NULL, TEXT("DllRegisterServer is called"), TEXT("FakeDLL"), MB_OK);
+    }
+
 }
